@@ -1,7 +1,6 @@
 
 import pandas as pd
 import numpy as np
-from sklearn.linear_model import LinearRegression
 
 def t_stat(model, X, y, feature_name):
     
