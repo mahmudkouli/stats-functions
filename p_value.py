@@ -5,8 +5,7 @@ import numpy as np
 def t_stat(model, X, y, feature_name):
     
     # computing sigma squared
-    y_pred = model.predict(X)
-    data['y_pred'] = y_pred
+    data['y_pred'] = model.predict(X)
     sigma_sq = np.sum((y - data['y_pred'])**2) / (len(data[feature_name]) - 2)
     
     # computign SST_x
