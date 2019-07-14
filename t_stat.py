@@ -23,3 +23,5 @@ def t_stat(model, X, y, feature_name):
     t_stat = coef/st_dev
     
     return {'Variance of residuals': sigma_sq, 'Variance in the '+feature_name: sst_x, 'Standard Error approx.':st_dev, 'Coefficient of '+feature_name: coef, 't-stat': t_stat}
+
+# use the r_sq from aux regression 
